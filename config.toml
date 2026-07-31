@@ -1,0 +1,85 @@
+baseURL = "https://bellaeloy.github.io/"
+title = "Isabella Cavalcanti"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+pagination.pagerSize = 20
+
+enableEmoji = true
+builddrafts = false
+
+[params]
+author = "Isabella Cavalcanti"
+description = "Architect and urban designer. Parametric modeling, urban development research and civic data."
+keywords = "architecture,urban design,urbanism,parametric modeling,grasshopper,portfolio"
+info = ["Architect and urban designer", "I model cities, and the rules that shape them"]
+avatarURL = "images/avatar.jpg"
+dateFormat = "January 2006"
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+
+customCSS = []
+customSCSS = ["scss/custom.scss"]
+customJS = []
+customRemoteJS = []
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+tag = "tags"
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/bellaeloy/"
+
+# Fill in the URL and uncomment each block you want to show on the home page.
+# [[params.social]]
+# name = "LinkedIn"
+# icon = "fa fa-2x fa-linkedin"
+# weight = 2
+# url = "https://www.linkedin.com/in/YOUR-HANDLE/"
+
+# [[params.social]]
+# name = "Instagram"
+# icon = "fa fa-2x fa-instagram"
+# weight = 3
+# url = "https://www.instagram.com/YOUR-HANDLE/"
+
+# [[params.social]]
+# name = "Email"
+# icon = "fa fa-2x fa-envelope"
+# weight = 4
+# url = "mailto:you@example.com"
+
+[languages.en]
+languageName = "English"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Timeline"
+weight = 2
+url = "timeline/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Artwork"
+weight = 4
+url = "artwork/"
+
+# Drop a PDF at static/resume.pdf, then uncomment this block.
+# [[languages.en.menu.main]]
+# name = "Resume/CV"
+# weight = 5
+# url = "resume.pdf"

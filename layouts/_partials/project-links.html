@@ -1,0 +1,18 @@
+{{ with .Params.links }}
+  <ul class="project-links">
+    {{ range . }}
+      {{ $icon := .icon | default "fa-solid fa-arrow-up-right-from-square" }}
+      <li>
+        {{ if eq .url "#" }}
+          <span class="project-link-todo" title="Placeholder — put the real URL in the page front matter">
+            <i class="{{ $icon }}" aria-hidden="true"></i>{{ .name }}
+          </span>
+        {{ else }}
+          <a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
+            <i class="{{ $icon }}" aria-hidden="true"></i>{{ .name }}
+          </a>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

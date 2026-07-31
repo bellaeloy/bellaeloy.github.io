@@ -1,0 +1,18 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+  <section class="container list projects">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+    </header>
+
+    <div class="page-intro">{{ .Content }}</div>
+
+    <div class="project-grid">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

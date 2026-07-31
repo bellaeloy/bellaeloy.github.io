@@ -1,0 +1,26 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+  <section class="container page artwork-page">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+    </header>
+
+    <div class="page-intro">{{ .Content }}</div>
+
+    <div class="artwork-grid">
+      {{ range .Params.pieces }}
+        {{ $art := partial "cover-style.html" (dict "light" .image "dark" .imageDark) }}
+        {{ $style := printf "aspect-ratio:%s;%s" (.ratio | default "1 / 1") $art }}
+        <figure class="artwork-item">
+          <div class="artwork-image" role="img" aria-label="{{ .title }}" style="{{ $style | safeCSS }}"></div>
+          <figcaption>
+            <span class="artwork-title">{{ .title }}</span>
+            <span class="artwork-meta">{{ .year }}{{ with .medium }} · {{ . }}{{ end }}</span>
+          </figcaption>
+        </figure>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

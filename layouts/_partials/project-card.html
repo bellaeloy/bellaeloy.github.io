@@ -1,0 +1,17 @@
+<article class="project-card{{ if .Params.featured }} project-card--featured{{ end }}">
+  <a class="project-cover" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1"
+     style="{{ (partial "cover-style.html" (dict "light" .Params.cover "dark" .Params.coverDark)) | safeCSS }}"></a>
+  <div class="project-card-body">
+    <span class="project-meta">{{ .Params.year }}{{ with .Params.role }} · {{ . }}{{ end }}</span>
+    <h2 class="project-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="project-summary">{{ .Params.summary }}</p>
+    {{ with .Params.tags }}
+      <ul class="project-tags">
+        {{ range . }}
+          <li><a href="{{ (printf "tags/%s/" (urlize .)) | relLangURL }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    {{ partial "project-links.html" . }}
+  </div>
+</article>

@@ -1,0 +1,12 @@
+{{- /* Emits the CSS custom properties that carry a drawing and its dark twin.
+       Call with (dict "light" "/images/x.svg" "dark" "/images/x-dark.svg").
+       Leave "dark" empty and a "-dark.svg" file next to the light one is used. */ -}}
+{{- $light := .light -}}
+{{- $dark := .dark -}}
+{{- if and (not $dark) (hasSuffix $light ".svg") -}}
+  {{- $guess := replaceRE `\.svg$` "-dark.svg" $light -}}
+  {{- if fileExists (printf "static%s" $guess) -}}
+    {{- $dark = $guess -}}
+  {{- end -}}
+{{- end -}}
+--cover:url('{{ $light | relURL }}');{{ with $dark }}--cover-dark:url('{{ . | relURL }}');{{ end }}

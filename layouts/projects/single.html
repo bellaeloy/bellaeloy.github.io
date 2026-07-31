@@ -1,0 +1,39 @@
+{{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "content" }}
+  <section class="container page">
+    <article>
+      <header>
+        <span class="project-meta">{{ .Params.year }}{{ with .Params.role }} · {{ . }}{{ end }}</span>
+        <h1 class="title">
+          <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+        </h1>
+      </header>
+
+      {{ with .Params.cover }}
+        <div class="project-hero" role="img" aria-label="{{ $.Title }}"
+             style="{{ (partial "cover-style.html" (dict "light" . "dark" $.Params.coverDark)) | safeCSS }}"></div>
+      {{ end }}
+
+      <dl class="project-facts">
+        {{ with .Params.role }}<div><dt>Role</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.location }}<div><dt>Location</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.year }}<div><dt>Year</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .Params.tools }}<div><dt>Tools</dt><dd>{{ delimit . ", " }}</dd></div>{{ end }}
+      </dl>
+
+      {{ .Content }}
+
+      <footer class="project-footer">
+        {{ partial "project-links.html" . }}
+        {{ with .Params.tags }}
+          <ul class="project-tags">
+            {{ range . }}
+              <li><a href="{{ (printf "tags/%s/" (urlize .)) | relLangURL }}">{{ . }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <p><a class="button-link" href="{{ "projects/" | relLangURL }}">All projects</a></p>
+      </footer>
+    </article>
+  </section>
+{{ end }}

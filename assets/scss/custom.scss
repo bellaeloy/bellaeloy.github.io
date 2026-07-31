@@ -1,0 +1,569 @@
+@import "variables";
+
+$card-bg: mix(#fff, $brand-cream, 55%);
+$card-border: mix($brand-gold, $brand-cream, 80%);
+$muted: mix($brand-cream, $brand-ink, 25%);
+$rail: mix($brand-gold, $brand-cream, 85%);
+
+// The dark card tone matches the background baked into the *-dark.svg drawings,
+// so a cover reads as part of the card instead of a pasted rectangle.
+$page-bg-dark: mix(#000, $brand-ink, 66%);
+$card-bg-dark: mix(#000, $brand-ink, 52%);
+$card-border-dark: mix($brand-gold, $brand-ink, 22%);
+$muted-dark: mix($brand-ink, $brand-cream, 38%);
+
+// Small caps label used for years, roles and section kickers.
+%kicker {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $brand-blue;
+}
+
+// The theme shouts the site name in the navbar and sets every heading at 600.
+.navigation .navigation-title {
+  text-transform: none;
+  letter-spacing: 0.02rem;
+}
+
+.about {
+  h2 {
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: $brand-ink;
+  }
+}
+
+.page-intro {
+  max-width: 62rem;
+  color: $muted;
+  margin-bottom: 4.8rem;
+
+  p {
+    text-align: left;
+  }
+}
+
+// Projects grid
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3.2rem;
+  margin: 0 0 4rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $card-bg;
+  border: 2px solid $card-border;
+  border-radius: 0.4rem;
+  transition: border-color 0.2s ease-in, transform 0.2s ease-in;
+
+  &:hover {
+    border-color: $brand-blue;
+    transform: translateY(-0.4rem);
+  }
+
+  &--featured {
+    grid-column: 1 / -1;
+
+    @media only screen and (min-width: 769px) {
+      flex-direction: row;
+
+      .project-cover {
+        flex: 0 0 46%;
+        padding-top: 0;
+      }
+
+      .project-card-body {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// A drawing rides on background-image, so the dark twin can swap in without a
+// second <img> and without losing the manual colour-scheme toggle.
+%cover-art {
+  background-image: var(--cover);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $brand-cream;
+}
+
+.project-cover {
+  @extend %cover-art;
+  display: block;
+  padding-top: 62.5%;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.project-meta {
+  @extend %kicker;
+  margin-bottom: 0.8rem;
+}
+
+.project-card-title {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  margin: 0 0 1.2rem 0;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $brand-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.project-summary {
+  flex: 1;
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  color: $muted;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: $brand-ink;
+    background-color: $brand-gold;
+    border-radius: 0.3rem;
+
+    &:hover {
+      color: $brand-cream;
+      background-color: $brand-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+
+  a,
+  .project-link-todo {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    i {
+      margin-right: 0.6rem;
+    }
+  }
+
+  .project-link-todo {
+    color: $muted;
+    opacity: 0.65;
+    cursor: help;
+    text-decoration: underline dotted;
+    text-underline-offset: 0.4rem;
+  }
+}
+
+// Single project page
+
+.project-hero {
+  @extend %cover-art;
+  aspect-ratio: 16 / 10;
+  margin: 0 0 3.2rem 0;
+  border: 2px solid $card-border;
+  border-radius: 0.4rem;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2.4rem;
+  margin: 0 0 3.2rem 0;
+  padding: 2.4rem;
+  background-color: $card-bg;
+  border-left: 4px solid $brand-blue;
+
+  dt {
+    @extend %kicker;
+    margin-bottom: 0.4rem;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.project-footer {
+  margin-top: 4.8rem;
+  padding-top: 2.4rem;
+  border-top: 2px solid $card-border;
+}
+
+// Artwork
+
+.artwork-grid {
+  columns: 3;
+  column-gap: 2.4rem;
+
+  @media only screen and (max-width: 1024px) {
+    columns: 2;
+  }
+
+  @media only screen and (max-width: 600px) {
+    columns: 1;
+  }
+}
+
+.artwork-item {
+  break-inside: avoid;
+  margin: 0 0 2.4rem 0;
+  padding: 0;
+}
+
+.artwork-image {
+  @extend %cover-art;
+  width: 100%;
+  border: 2px solid $card-border;
+  border-radius: 0.4rem;
+  transition: border-color 0.2s ease-in;
+
+  &:hover {
+    border-color: $brand-blue;
+  }
+}
+
+.artwork-item figcaption {
+  padding: 1.2rem 0.2rem 0 0.2rem;
+}
+
+.artwork-title {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  color: $alt-fg-color;
+}
+
+.artwork-meta {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: $muted;
+}
+
+// Timeline
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li:first-child .timeline-year {
+    margin-top: 1.6rem;
+  }
+}
+
+.timeline-year {
+  position: relative;
+  margin: 4.8rem 0 2.4rem 0;
+  padding-left: 4.8rem;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  font-weight: 200;
+  color: $brand-blue;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0.7rem;
+    top: 0.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: $brand-blue;
+  }
+}
+
+.timeline-items {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 4.8rem;
+  list-style: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $rail;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 2.4rem;
+  align-items: flex-start;
+  margin: 0 0 3.2rem 0;
+  padding: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -3.85rem;
+    top: 1.1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $brand-cream;
+    border: 2px solid $brand-gold;
+    border-radius: 50%;
+    transition: border-color 0.2s ease-in, background-color 0.2s ease-in;
+  }
+
+  &:hover:before {
+    background-color: $brand-blue;
+    border-color: $brand-blue;
+  }
+}
+
+.timeline-thumb {
+  @extend %cover-art;
+  flex: 0 0 14rem;
+  height: 9rem;
+  border: 2px solid $card-border;
+  border-radius: 0.4rem;
+  transition: border-color 0.2s ease-in;
+
+  &:hover {
+    border-color: $brand-blue;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.timeline-body {
+  flex: 1;
+}
+
+.timeline-date {
+  @extend %kicker;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-title {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  margin: 0 0 0.8rem 0;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $brand-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.timeline-summary {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: left;
+  color: $muted;
+}
+
+.timeline-more {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.timeline-cta {
+  margin-top: 4.8rem;
+  padding-top: 2.4rem;
+  border-top: 2px solid $card-border;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 1rem 2.4rem;
+  font-weight: 500;
+  color: $brand-cream;
+  background-color: $brand-blue;
+  border-radius: 0.3rem;
+
+  &:hover {
+    color: $brand-ink;
+    background-color: $brand-gold;
+    text-decoration: none;
+  }
+}
+
+@mixin custom_dark {
+  // Swap in the dark twin of each drawing, and give it the card tone as its
+  // backdrop so the two edges meet.
+  .project-cover,
+  .project-hero,
+  .timeline-thumb,
+  .artwork-image {
+    background-image: var(--cover-dark, var(--cover));
+    background-color: $card-bg-dark;
+  }
+
+  .project-meta,
+  .project-facts dt,
+  .timeline-date {
+    color: $brand-gold;
+  }
+
+  .about h2,
+  .page-intro,
+  .project-summary,
+  .timeline-summary,
+  .artwork-meta,
+  .project-links .project-link-todo {
+    color: $muted-dark;
+  }
+
+  .artwork-title {
+    color: $brand-cream;
+  }
+
+  .project-card,
+  .project-hero,
+  .timeline-thumb,
+  .artwork-image {
+    border-color: $card-border-dark;
+  }
+
+  .project-card,
+  .project-facts {
+    background-color: $card-bg-dark;
+  }
+
+  .project-card:hover,
+  .timeline-thumb:hover,
+  .artwork-image:hover {
+    border-color: $brand-gold;
+  }
+
+  .project-facts {
+    border-left-color: $brand-gold;
+  }
+
+  // The theme paints every <a> in the dark link colour with a specificity that
+  // beats a plain .class a rule, so each of these has to say its colour again.
+  .project-card-title a,
+  .timeline-title a {
+    color: $brand-cream;
+
+    &:hover {
+      color: $brand-gold;
+    }
+  }
+
+  // A solid gold pill turns shrill on a dark page. Outline it instead.
+  .project-tags a {
+    color: $brand-gold;
+    background-color: transparent;
+    border: 1px solid $brand-gold;
+    padding: 0.1rem 0.9rem;
+
+    &:hover {
+      color: $page-bg-dark;
+      background-color: $brand-gold;
+    }
+  }
+
+  .timeline-year {
+    color: $brand-gold;
+
+    &:before {
+      background-color: $brand-gold;
+    }
+  }
+
+  .timeline-items:before {
+    background-color: $card-border-dark;
+  }
+
+  .timeline-item:before {
+    background-color: $page-bg-dark;
+    border-color: $brand-gold;
+  }
+
+  .timeline-item:hover:before {
+    background-color: $brand-gold;
+  }
+
+  .project-footer,
+  .timeline-cta {
+    border-top-color: $card-border-dark;
+  }
+
+  .button-link {
+    color: $brand-gold;
+    background-color: transparent;
+    border: 2px solid $brand-gold;
+    padding: 0.8rem 2.2rem;
+
+    &:hover {
+      color: $page-bg-dark;
+      background-color: $brand-gold;
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include custom_dark;
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include custom_dark;
+  }
+}
