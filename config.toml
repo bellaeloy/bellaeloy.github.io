@@ -12,7 +12,7 @@ builddrafts = false
 author = "Isabella Cavalcanti"
 description = "Architect and urban designer. Parametric modeling, urban development research and civic data."
 keywords = "architecture,urban design,urbanism,parametric modeling,grasshopper,portfolio"
-info = ["Architect and urban designer", "I model cities, and the rules that shape them"]
+info = ["Urban data analyst, designer and researcher", "Passionate about understanding cities through data, technology, and design."]
 avatarURL = "images/avatar.jpg"
 dateFormat = "January 2006"
 colorScheme = "auto"
@@ -36,24 +36,29 @@ icon = "fa fa-2x fa-github"
 weight = 1
 url = "https://github.com/bellaeloy/"
 
-# Fill in the URL and uncomment each block you want to show on the home page.
-# [[params.social]]
-# name = "LinkedIn"
-# icon = "fa fa-2x fa-linkedin"
-# weight = 2
-# url = "https://www.linkedin.com/in/YOUR-HANDLE/"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 2
+url = "https://www.linkedin.com/in/isabella-eloy/"
 
-# [[params.social]]
-# name = "Instagram"
-# icon = "fa fa-2x fa-instagram"
-# weight = 3
-# url = "https://www.instagram.com/YOUR-HANDLE/"
+[[params.social]]
+name = "ORCID"
+icon = "fa fa-2x fa-id-badge"
+weight = 3
+url = "https://orcid.org/0000-0002-6462-5849"
 
-# [[params.social]]
-# name = "Email"
-# icon = "fa fa-2x fa-envelope"
-# weight = 4
-# url = "mailto:you@example.com"
+[[params.social]]
+name = "Lattes"
+icon = "fa fa-2x fa-graduation-cap"
+weight = 4
+url = "http://lattes.cnpq.br/0165490242445275"
+
+[[params.social]]
+name = "Email"
+icon = "fa fa-2x fa-envelope"
+weight = 5
+url = "mailto:isabellaeloy.be@gmail.com"
 
 [languages.en]
 languageName = "English"
@@ -78,8 +83,7 @@ name = "Artwork"
 weight = 4
 url = "artwork/"
 
-# Drop a PDF at static/resume.pdf, then uncomment this block.
-# [[languages.en.menu.main]]
-# name = "Resume/CV"
-# weight = 5
-# url = "resume.pdf"
+[[languages.en.menu.main]]
+name = "Resume/CV"
+weight = 5
+url = "resume.pdf"

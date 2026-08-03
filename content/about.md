@@ -6,7 +6,7 @@ aliases = ["about-me", "contact"]
 +++
 
 
-Hi! I’m Isabella Cavalcanti, an urban data analyst and researcher passionate about understanding cities through data, technology, and design.
+Hi! I’m Isabella Cavalcanti, an urban data analyst, designer and researcher passionate about understanding cities through data, technology, and design.
 
 My work sits at the intersection of urban planning, data science, and digital innovation, exploring how information, geospatial technologies, and collaborative approaches can help create better cities and more effective public policies. I have experience working with data analysis, GIS, spatial analysis, indicator development, and the organization of complex datasets to support decision-making in urban and social projects.
 
