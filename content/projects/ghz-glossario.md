@@ -1,23 +1,32 @@
 +++
-title = "GHZ Glossário"
-date = 2021-05-19
-year = "2021"
+title = "The GHZ Glossary"
+date = 2025-03-15
+year = "2025"
 role = "Designer and developer"
-location = "Ganesh / GHZ"
-summary = "A shared glossary for the GHZ group. It fixes one meaning per term, so the network and the documents use the same words."
+location = "São Carlos, SP"
 cover = "/images/projects/ghz-glossario.svg"
-tools = ["SCSS", "HTML", "Jekyll"]
-tags = ["civic data", "web"]
+tools = ["CSS", "HTML", "Jekyll"]
+tags = ["civic data", "web", "PhD research", "USP"]
+
 [[links]]
 name = "Repository"
 icon = "fa-brands fa-github"
+weight = 1
 url = "https://github.com/bellaeloy/ghz.glossario"
+
+[[links]]
+name = "Official website"
+icon = "fa-solid fa-diagram-project"
+weight = 2
+url = "https://bellaeloy.github.io/ghz.glossario/glossario/"
+
 +++
 
-A group that works across architecture, law and data uses the same word for
-different things. "Agent", "network" and "governance" each carried three
-meanings inside GHZ.
+## Description
 
-The glossary gives one entry per term. Each entry holds the agreed definition,
-the source and the terms it links to. The site companion of [GHZ
-Network](../ghz-network/) uses these definitions for its node labels.
+The GHZ Glossary is a digital knowledge platform developed as part of my PhD research to organize and communicate the key concepts, authors, organizations, and themes explored throughout the thesis. Designed as an accessible reference resource, the website brings together definitions, theoretical frameworks, and contextual information related to urban data governance, collective intelligence, digital infrastructures, and urban studies.
+
+## My Role
+
+As part of my doctoral research, I conceived, designed, and developed the GHZ Glossary website. I was responsible for selecting and organizing concepts, synthesizing definitions from the literature, and creating the platform’s information architecture and visual design.
+
