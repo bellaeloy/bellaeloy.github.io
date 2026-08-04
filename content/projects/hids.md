@@ -8,6 +8,7 @@ cover = "/images/projects/riverfront-commons.svg"
 tools = ["Rhino 3D", "AutoCAD", "Illustrator", "QGIS", "Grasshopper", "ArcGISPro"]
 tags = ["public space", "landscape", "urban design", "sustainability", "urban development", "Unicamp"]
 placeholder = true
+
 [[links]]
 name = "See all the oficial publication here"
 icon = "fa-solid fa-tree-city"

@@ -7,6 +7,7 @@ location = "São Carlos, SP"
 cover = "/images/projects/ghz-network.svg"
 tools = ["HTML", "Python", "NumPy", "Matplotlib"]
 tags = ["data visualization", "civic data", "web", "network analysis", "USP"]
+
 [[links]]
 name = "Repository"
 icon = "fa-brands fa-github"

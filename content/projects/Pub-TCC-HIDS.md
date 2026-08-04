@@ -1,5 +1,5 @@
 +++
-title = "My publication: Form-Based Code for HIDS"
+title = "My publication: Form-Based Code for HIDS | Unicamp"
 date = 2021-09-15
 year = "2021"
 role = "Author"
@@ -8,6 +8,7 @@ cover = "/images/projects/social-housing-typologies.svg"
 tools = ["Grasshopper", "Illustrator", "Rhino 3D"]
 tags = ["Publication", "urban design", "coding", "public space", "Unicamp"]
 placeholder = true
+
 [[links]]
 name = "See the publication here"
 icon = "fa-solid fa-book-open"

@@ -7,6 +7,7 @@ location = "Maricá, RJ"
 cover = "/images/projects/civic-innovation-python.svg"
 tools = ["Python", "QGIS", "Illustrator", "Autocad"]
 tags = ["urban development", "urban design", "research", "sustainability", "USP"]
+
 [[links]]
 name = "See the oficial publication here"
 icon = "fa-solid fa-tree-city"

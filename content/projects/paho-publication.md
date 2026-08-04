@@ -1,5 +1,5 @@
 +++
-title = "PAHO/WHO Publication Health Promotion and Cities"
+title = "Health Promotion and Cities | PAHO/WHO"
 date = 2024-01-12
 year = "2024"
 role = "Data visualization specialist"

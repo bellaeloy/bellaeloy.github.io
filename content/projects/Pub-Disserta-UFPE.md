@@ -1,5 +1,5 @@
 +++
-title = "My publication: City Pattern"
+title = "My publication: City Pattern | UFPE"
 date = 2020-11-15
 year = "2020"
 role = "Author"
