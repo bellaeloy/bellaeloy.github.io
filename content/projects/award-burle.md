@@ -4,7 +4,7 @@ title = "3rd Place | ABAP Roberto Burle Marx Award"
 date = 2024-06-15
 year = "2024"
 role = "Urban planner and researcher"
-location = "Maricá, RJ"
+location = "Brazil"
 cover = "/images/projects/ghz-network.svg"
 tags = ["urban design", "award", "USP", "urban planner", "sustainability"]
 

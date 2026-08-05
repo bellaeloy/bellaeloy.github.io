@@ -1,5 +1,5 @@
 +++
-title = "Index: The Block of the Future | Digital Futures"
+title = "Team Index: The Block of the Future | Digital Futures"
 date = 2020-07-15
 year = "2020"
 role = "Designer and developer"
