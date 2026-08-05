@@ -23,12 +23,6 @@
                   <h3 class="timeline-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                   <p class="timeline-summary">{{ .Params.summary }}</p>
                   <a class="timeline-more" href="{{ .RelPermalink }}">See the project →</a>
-                </div>
-                {{ with .Params.cover }}
-                  <a class="timeline-thumb" href="{{ $project.RelPermalink }}" aria-hidden="true" tabindex="-1"
-                     style="{{ (partial "cover-style.html" (dict "light" . "dark" $project.Params.coverDark)) | safeCSS }}"></a>
-                {{ end }}
-              </li>
             {{ end }}
           </ul>
         </li>
