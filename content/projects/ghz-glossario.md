@@ -19,10 +19,9 @@ name = "Official website"
 icon = "fa-solid fa-diagram-project"
 weight = 2
 url = "https://bellaeloy.github.io/ghz.glossario/glossario/"
-
 +++
 
-## Description
+### Description
 
 The GHZ Glossary is a digital knowledge platform developed as part of my PhD research to organize and communicate the key concepts, authors, organizations, and themes explored throughout the thesis. Designed as an accessible reference resource, the website brings together definitions, theoretical frameworks, and contextual information related to urban data governance, collective intelligence, digital infrastructures, and urban studies.
 

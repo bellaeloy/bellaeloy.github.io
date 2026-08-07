@@ -19,7 +19,6 @@ name = "Official website"
 icon = "fa-solid fa-share-nodes"
 weight = 2
 url = "https://bellaeloy.github.io/ghz.network/"
-
 +++
 
 ### Description

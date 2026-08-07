@@ -1,3 +1,4 @@
+
 +++
 title = "Health Promotion and Cities | PAHO/WHO"
 date = 2024-01-12
@@ -12,7 +13,6 @@ tags = ["data visualization", "drawing", "diagrams", "Unicamp"]
 name = "See the publication here"
 icon = "fa-solid fa-heart-pulse"
 url = "https://iris.paho.org/items/351da24e-3224-4099-a7cb-baa8b01264d1"
-
 +++
 
 ### Description

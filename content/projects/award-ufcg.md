@@ -7,11 +7,7 @@ role = "Student"
 location = "Campina Grande, PB"
 cover = "/images/projects/premio-ufcg.svg"
 tags = ["architecture", "urbanism", "award", "UFCG", "urban planner"]
-
-[[links]]
-#name = "Certificate"
-#icon = "fa-solid fa-certificate"
-#url = "#"
++++
 
 ### Description
 

@@ -12,7 +12,6 @@ tags = ["data visualization", "civic data", "web", "MIT", "urban planner", "awar
 name = "Certificate"
 icon = "fa-solid fa-certificate"
 url = "https://drive.google.com/file/d/19q0FdLYCi3Jr7PyCqzsrAeNdoiYkO18x/view?usp=sharing"
-
 +++
 
 ### Description
