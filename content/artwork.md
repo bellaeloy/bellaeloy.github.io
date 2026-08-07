@@ -2,14 +2,14 @@
 title = "Artwork"
 slug = "artwork"
 type = "artwork"
-description = "Drawings and graphic studies."
+description = "My drawings, paintings and digital art."
 
 [[pieces]]
-title = "Axonometric Study"
-year = "2025"
+title = "Sem nome"
+year = "2021"
 medium = "Ink on paper, 42 × 59 cm"
-image = "/images/artwork/axonometric-study.svg"
-ratio = "9 / 11"
+image = "/images/artwork/sem-nome.svg"
+ratio = "14/9"
 
 [[pieces]]
 title = "Ridge Wash"
@@ -50,5 +50,4 @@ ratio = "9 / 11"
 <!-- PLACEHOLDER: replace every piece with your own work. Add or remove a
      [[pieces]] block in the front matter above. -->
 
-Drawings I make outside a brief. Some start as a study for a project. Most stay
-on paper.
+"You cannot talk about art. You have to art about art. Then you know something" | Carmen Herrera (1915-2022)
