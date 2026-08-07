@@ -26,7 +26,7 @@ url = "https://bellaeloy.github.io/ghz.glossario/glossario/"
 
 The GHZ Glossary is a digital knowledge platform developed as part of my PhD research to organize and communicate the key concepts, authors, organizations, and themes explored throughout the thesis. Designed as an accessible reference resource, the website brings together definitions, theoretical frameworks, and contextual information related to urban data governance, collective intelligence, digital infrastructures, and urban studies.
 
-## My Role
+### My Role
 
 As part of my doctoral research, I conceived, designed, and developed the GHZ Glossary website. I was responsible for selecting and organizing concepts, synthesizing definitions from the literature, and creating the platform’s information architecture and visual design.
 

@@ -15,7 +15,7 @@ icon = "fa-solid fa-book-open"
 url = "https://revistas.usp.br/gestaodeprojetos/pt_BR/article/view/183534"
 +++
 
-## Description
+### Description
 
 This publication presents a methodological framework for translating Christopher Alexander’s Pattern Language theory into parametric computational tools for urban design. Using the Design Science Research approach, the study develops a methodological artifact that connects urban planning processes with the complexity and dynamic nature of city life. By bridging design theory and computational methods, the article contributes to the development of data-informed and adaptable urban planning strategies capable of supporting more responsive and human-centered urban environments.
 

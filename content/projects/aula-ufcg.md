@@ -5,7 +5,7 @@ date = 2020-03-15
 year = "2020"
 role = "Professor"
 location = "Campina Grande, PB"
-cover = "/images/projects/ghz-network.svg"
+cover = "/images/projects/aula-ufcg.svg"
 tags = ["Parametric design", "course", "UFCG", "urban planner"]
 
 [[links]]

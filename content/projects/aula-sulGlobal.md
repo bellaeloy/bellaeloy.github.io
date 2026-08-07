@@ -3,7 +3,7 @@
 title = "Research Study Group: Global South from a Decolonial Perspective"
 date = 2025-08-15
 year = "2025"
-role = "Organizer"
+role = "Organizer and professor"
 location = "São Carlos, SP"
 cover = "/images/projects/aula-sulGlobal.svg"
 tags = ["data visualization", "civic data", "Global South", "network analysis", "USP"]
