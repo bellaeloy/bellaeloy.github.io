@@ -4,7 +4,7 @@ date = 2024-04-15
 year = "2024"
 role = "Co-Author"
 location = "Brazil"
-cover = "/images/projects/social-housing-typologies.svg"
+cover = "/images/projects/transDigi.svg"
 tags = ["Publication", "urban design", "coding", "Healthy Cities", "Unicamp"]
 placeholder = true
 

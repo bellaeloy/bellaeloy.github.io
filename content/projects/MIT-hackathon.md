@@ -4,7 +4,7 @@ date = 2020-09-15
 year = "2020"
 role = "Developer and urban planner"
 location = "Global"
-cover = "/images/projects/ghz-network.svg"
+cover = "/images/projects/mit.svg"
 tools = ["Python", "csv"]
 tags = ["data visualization", "civic data", "web", "MIT", "urban planner", "award"]
 

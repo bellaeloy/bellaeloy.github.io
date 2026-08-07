@@ -4,7 +4,7 @@ date = 2023-12-01
 year = "2023"
 role = "Urban planner and researcher"
 location = "Maricá, RJ"
-cover = "/images/projects/civic-innovation-python.svg"
+cover = "/images/projects/marica.svg"
 tools = ["Python", "QGIS", "Illustrator", "Autocad"]
 tags = ["urban development", "urban design", "research", "sustainability", "USP"]
 

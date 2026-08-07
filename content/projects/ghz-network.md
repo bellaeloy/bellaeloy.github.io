@@ -4,7 +4,7 @@ date = 2025-12-31
 year = "2025"
 role = "Designer and developer"
 location = "São Carlos, SP"
-cover = "/images/projects/ghz-network.svg"
+cover = "/images/projects/ghz-net.svg"
 tools = ["HTML", "Python", "NumPy", "Matplotlib"]
 tags = ["data visualization", "civic data", "web", "network analysis", "USP"]
 

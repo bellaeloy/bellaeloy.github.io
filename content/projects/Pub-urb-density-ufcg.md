@@ -4,13 +4,13 @@ date = 2020-11-15
 year = "2020"
 role = "Author"
 location = "Brazil"
-cover = "/images/projects/social-housing-typologies.svg"
+cover = "/images/projects/risco-zeis.svg"
 tools = ["Grasshopper", "Rhino 3D"]
 tags = ["Publication", "urban design", "coding", "urban planning", "UFCG"]
 placeholder = true
 
 [[links]]
-name = "See my master’s thesis here"
+name = "See the publication here"
 icon = "fa-solid fa-book-open"
 url = "https://revistademorfologiaurbana.org/index.php/rmu/article/view/149"
 +++

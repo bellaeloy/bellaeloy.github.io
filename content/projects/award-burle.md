@@ -5,7 +5,7 @@ date = 2024-06-15
 year = "2024"
 role = "Urban planner and researcher"
 location = "Brazil"
-cover = "/images/projects/ghz-network.svg"
+cover = "/images/projects/premio-burle.svg"
 tags = ["urban design", "award", "USP", "urban planner", "sustainability"]
 
 [[links]]

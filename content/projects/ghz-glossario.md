@@ -4,7 +4,7 @@ date = 2025-03-15
 year = "2025"
 role = "Designer and developer"
 location = "São Carlos, SP"
-cover = "/images/projects/ghz-glossario.svg"
+cover = "/images/projects/glossario.svg"
 tools = ["CSS", "HTML", "Jekyll"]
 tags = ["civic data", "web", "PhD research", "USP"]
 

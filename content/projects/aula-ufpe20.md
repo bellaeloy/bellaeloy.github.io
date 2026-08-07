@@ -5,7 +5,7 @@ date = 2020-12-15
 year = "2020"
 role = "Professor"
 location = "Recife, PE"
-cover = "/images/projects/ghz-network.svg"
+cover = "/images/projects/ufpe20.svg"
 tags = ["Parametric design", "course", "UFPE", "urban planner", "urban design"]
 
 [[links]]
